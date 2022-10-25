@@ -3,7 +3,8 @@ public:
     TreeNode* solve(int start_pre, int start_in, int end_in, vector<int>& preorder, vector<int>& inorder) 
     {
         
-        if(start_in > end_in || start_pre > preorder.size()-1) return NULL;
+        if(start_in > end_in || start_pre > preorder.size()-1) 
+            return NULL;
         
         TreeNode* root = new TreeNode(preorder[start_pre]);
         
