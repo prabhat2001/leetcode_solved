@@ -3,8 +3,7 @@ public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         
         vector<vector<int>> v;
-        if(!root)
-            return v;
+        if(!root) return v;
         
         queue<TreeNode*> q;
         int count = 1;
